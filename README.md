@@ -256,6 +256,8 @@ Complete la implementación de la clase `RegistryTest.java` con (al menos) un m�
 
 Complete la implementación del método `registerVoter` en la clase `Registry.java` para retornar el resultado esperado según la entrada.
 
+![img_3.png](img_3.png)
+
 ## EJERCICIO "DESCUENTO DE TARIFAS"
 
 ### REALIZAR DISEÑO DE PRUEBAS
