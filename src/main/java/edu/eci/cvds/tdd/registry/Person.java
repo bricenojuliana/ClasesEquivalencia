@@ -27,8 +27,11 @@ public class Person {
     /**
      * The class' default constructor
      */
-    public Person() {
+    public Person(int id) {
         super();
+        setAlive(true);
+        setAge(18);
+        setId(id);
     }
     /**
      * A person constructor with all the information
