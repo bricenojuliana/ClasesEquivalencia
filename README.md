@@ -263,6 +263,66 @@ Complete la implementación del método `registerVoter` en la clase `Registry.ja
 ### REALIZAR DISEÑO DE PRUEBAS
 Para realizar de forma correcta el diseño de sus pruebas responda las preguntas que se encuentran en el siguiente [documento](https://campusvirtual.escuelaing.edu.co/moodle/pluginfile.php/142929/mod_assign/intro/EjercicioClasesEquivalencia.pdf).
 
+1. De acuerdo con lo indicado, y teniendo en cuenta que NO hay precondiciones, en qué casos se debería
+   arrojar una excepción de tipo ExcepcionParametrosInvalidos?. Agregue esto a la especificación.
+   /**
+   calcular la tarifa de cada billete según el trayecto, la antelación
+   en la que se obtiene el billete y la edad del pasajero, de acuerdo
+   con la normativa 005.
+   @param tarifaBase valor base del vuelo
+   @param diasAntelacion dias de antelación del vuelo
+   @param edad - edad del pasajero
+   @throws ExcepcionParametrosInvalidos [si tarifa base < 1 , dias de antelacion < 0, edad < 0 ó edad > 135 ]
+   **/
+   public long calculoTarifa(long tarifaBase, int diasAntelacion, int edad)
+   2. En la siguiente tabla enumere un conjunto de clases de equivalencia que -según usted- creen una
+   buena división del conjunto de datos de entrada de la función anterior:
+
+      | Numero | Clase de equivalencia                  | Resultado correcto / incorrecto |
+      |--------|----------------------------------------|---------------------------------|
+      | 1      | tarifa base < 1                        | incorrecto                      |
+      | 2      | tarifa base >= 1                       | correcto                        |
+      | 3      | dias de antelacion < 0                 | incorrecto                      |
+      | 4      | dias de antelacion >= 0                | correcto                        |
+      | 5      | edad < 0                               | incorrecto                      |
+      | 6      | edad >= 0                              | correcto                        |
+      | 7      | edad > 135                             | incorrecto                      |
+      | 8      | edad <= 135                            | correcto                        |
+      | 9      | edad < 18                              | correcto                        |
+      | 10     | edad >= 18                             | correcto                        |
+      | 11     | edad < 65                              | correcto                        |
+      | 12     | edad >= 65                             | correcto                        |
+      | 13     | dias de antelacion < 20                | correcto                        |
+      | 14     | dias de antelacion >= 20               | correcto                        |
+      | 15     | dias de antelacion >= 20 y edad < 18   | correcto                        |
+      | 16     | dias de antelacion >= 20  y edad >= 65 | correcto                        |
+      
+       
+
+
+3. Para cada clase de equivalencia, defina un caso de prueba específico, definiendo: parámetros de
+   entrada y resultados esperados.
+   1. Dado que tarifa base < 1, cuando quiero calcular la tarifa, el resultado esperado es excepcion
+   2. Dado que tarifa base >= 1, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa
+   3. Dado que los dias de antelacion < 0, cuando quiero calcular la tarifa, el resultado esperado es excepcion
+   4. Dado que los dias de antelacion >= 0, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa
+   5. Dado que edad < 0, cuando quiero calcular la tarifa, el resultado esperado es excepcion
+   6. Dado que edad >= 0, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa
+   7. Dado que edad > 135, cuando quiero calcular la tarifa, el resultado esperado es excepcion
+   8. Dado que edad <= 135, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa
+   9. Dado que edad < 18, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa aplicando el descuento
+   10. Dado que edad >= 18, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa 
+   11. Dado que edad < 65, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa
+   12. Dado que edad >= 65, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa aplicando el descuento
+   13. Dado los dias de antelacion < 20, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa
+   14. Dado los dias de antelacion >= 20, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa aplicando el descuento
+   15. Dado los dias de antelacion >= 20 y edad < 18, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa aplicando el descuento acomulado
+   16. Dado los dias de antelacion >= 20 y edad >= 65, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa aplicando el descuento acomulado
+
+4. A partir de las clases de equivalencia identificadas en el punto 2, identifique las condiciones límite o
+   Por cada numero de referencia entre los parametros, las condiciones límites son restarle 1, sumarle 1 y el valor en sí mismo
+5. En la implementación.
+
 ### IMPLEMENTACIÓN DE LAS PRUEBAS
 Descargue el archivo [`aerodescuentos.jar`](https://campusvirtual.escuelaing.edu.co/moodle/pluginfile.php/142929/mod_assign/intro/aerodescuentos-1.0.0.jar) y adicione esta nueva dependencia en el archivo `pom.xml` de su proyecto.
 
@@ -282,3 +342,4 @@ Ejecute el comando de Maven para las fases de compilación y pruebas. Verifique 
 - Agregar y configurar el archivo `.gitignore` del repositorio para excluir la carpeta target y los archivos generados por el IDE que se haya usado. (ej. `.classpath`, `.idea`, `.settings`, etc.).
 - Agregar el nombre de los integrantes que realizaron el laboratorio. Puede ser en un archivo `integrantes.txt` o agregándolos en el archivo `Readme` del repositorio.
 - Terminar el laboratorio antes de la próxima sesión de laboratorio.
+
