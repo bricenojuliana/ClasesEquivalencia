@@ -265,7 +265,8 @@ Para realizar de forma correcta el diseño de sus pruebas responda las preguntas
 
 1. De acuerdo con lo indicado, y teniendo en cuenta que NO hay precondiciones, en qué casos se debería
    arrojar una excepción de tipo ExcepcionParametrosInvalidos?. Agregue esto a la especificación.
-   /**
+   
+    /**
    calcular la tarifa de cada billete según el trayecto, la antelación
    en la que se obtiene el billete y la edad del pasajero, de acuerdo
    con la normativa 005.
@@ -275,30 +276,28 @@ Para realizar de forma correcta el diseño de sus pruebas responda las preguntas
    @throws ExcepcionParametrosInvalidos [si tarifa base < 1 , dias de antelacion < 0, edad < 0 ó edad > 135 ]
    **/
    public long calculoTarifa(long tarifaBase, int diasAntelacion, int edad)
-   2. En la siguiente tabla enumere un conjunto de clases de equivalencia que -según usted- creen una
-   buena división del conjunto de datos de entrada de la función anterior:
 
-      | Numero | Clase de equivalencia                  | Resultado correcto / incorrecto |
-      |--------|----------------------------------------|---------------------------------|
-      | 1      | tarifa base < 1                        | incorrecto                      |
-      | 2      | tarifa base >= 1                       | correcto                        |
-      | 3      | dias de antelacion < 0                 | incorrecto                      |
-      | 4      | dias de antelacion >= 0                | correcto                        |
-      | 5      | edad < 0                               | incorrecto                      |
-      | 6      | edad >= 0                              | correcto                        |
-      | 7      | edad > 135                             | incorrecto                      |
-      | 8      | edad <= 135                            | correcto                        |
-      | 9      | edad < 18                              | correcto                        |
-      | 10     | edad >= 18                             | correcto                        |
-      | 11     | edad < 65                              | correcto                        |
-      | 12     | edad >= 65                             | correcto                        |
-      | 13     | dias de antelacion < 20                | correcto                        |
-      | 14     | dias de antelacion >= 20               | correcto                        |
-      | 15     | dias de antelacion >= 20 y edad < 18   | correcto                        |
-      | 16     | dias de antelacion >= 20  y edad >= 65 | correcto                        |
-      
-       
+2. En la siguiente tabla enumere un conjunto de clases de equivalencia que -según usted- creen una
+buena división del conjunto de datos de entrada de la función anterior:
 
+   | Numero | Clase de equivalencia                  | Resultado correcto / incorrecto |
+   |--------|----------------------------------------|---------------------------------|
+   | 1      | tarifa base < 1                        | incorrecto                      |
+   | 2      | tarifa base >= 1                       | correcto                        |
+   | 3      | dias de antelacion < 0                 | incorrecto                      |
+   | 4      | dias de antelacion >= 0                | correcto                        |
+   | 5      | edad < 0                               | incorrecto                      |
+   | 6      | edad >= 0                              | correcto                        |
+   | 7      | edad > 135                             | incorrecto                      |
+   | 8      | edad <= 135                            | correcto                        |
+   | 9      | edad < 18                              | correcto                        |
+   | 10     | edad >= 18                             | correcto                        |
+   | 11     | edad < 65                              | correcto                        |
+   | 12     | edad >= 65                             | correcto                        |
+   | 13     | dias de antelacion < 20                | correcto                        |
+   | 14     | dias de antelacion >= 20               | correcto                        |
+   | 15     | dias de antelacion >= 20 y edad < 18   | correcto                        |
+   | 16     | dias de antelacion >= 20  y edad >= 65 | correcto                        |
 
 3. Para cada clase de equivalencia, defina un caso de prueba específico, definiendo: parámetros de
    entrada y resultados esperados.
