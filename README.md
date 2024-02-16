@@ -280,24 +280,24 @@ Para realizar de forma correcta el diseño de sus pruebas responda las preguntas
 2. En la siguiente tabla enumere un conjunto de clases de equivalencia que -según usted- creen una
 buena división del conjunto de datos de entrada de la función anterior:
 
-   | Numero | Clase de equivalencia                  | Resultado correcto / incorrecto |
-   |--------|----------------------------------------|---------------------------------|
-   | 1      | tarifa base < 1                        | incorrecto                      |
-   | 2      | tarifa base >= 1                       | correcto                        |
-   | 3      | dias de antelacion < 0                 | incorrecto                      |
-   | 4      | dias de antelacion >= 0                | correcto                        |
-   | 5      | edad < 0                               | incorrecto                      |
-   | 6      | edad >= 0                              | correcto                        |
-   | 7      | edad > 135                             | incorrecto                      |
-   | 8      | edad <= 135                            | correcto                        |
-   | 9      | edad < 18                              | correcto                        |
-   | 10     | edad >= 18                             | correcto                        |
-   | 11     | edad < 65                              | correcto                        |
-   | 12     | edad >= 65                             | correcto                        |
-   | 13     | dias de antelacion < 20                | correcto                        |
-   | 14     | dias de antelacion >= 20               | correcto                        |
-   | 15     | dias de antelacion >= 20 y edad < 18   | correcto                        |
-   | 16     | dias de antelacion >= 20  y edad >= 65 | correcto                        |
+   | Numero | Clase de equivalencia                | Resultado correcto / incorrecto |
+   |--------|--------------------------------------|---------------------------------|
+   | 1      | tarifa base < 1                      | incorrecto                      |
+   | 2      | tarifa base >= 1                     | correcto                        |
+   | 3      | dias de antelacion < 0               | incorrecto                      |
+   | 4      | dias de antelacion >= 0              | correcto                        |
+   | 5      | edad < 0                             | incorrecto                      |
+   | 6      | edad >= 0                            | correcto                        |
+   | 7      | edad > 135                           | incorrecto                      |
+   | 8      | edad <= 135                          | correcto                        |
+   | 9      | edad < 18                            | correcto                        |
+   | 10     | edad >= 18                           | correcto                        |
+   | 11     | edad <= 65                           | correcto                        |
+   | 12     | edad > 65                            | correcto                        |
+   | 13     | dias de antelacion <= 20             | correcto                        |
+   | 14     | dias de antelacion > 20              | correcto                        |
+   | 15     | dias de antelacion > 20 y edad < 18  | correcto                        |
+   | 16     | dias de antelacion > 20  y edad > 65 | correcto                        |
 
 3. Para cada clase de equivalencia, defina un caso de prueba específico, definiendo: parámetros de
    entrada y resultados esperados.
@@ -311,12 +311,12 @@ buena división del conjunto de datos de entrada de la función anterior:
    8. Dado que edad <= 135, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa
    9. Dado que edad < 18, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa aplicando el descuento
    10. Dado que edad >= 18, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa 
-   11. Dado que edad < 65, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa
-   12. Dado que edad >= 65, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa aplicando el descuento
-   13. Dado los dias de antelacion < 20, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa
-   14. Dado los dias de antelacion >= 20, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa aplicando el descuento
-   15. Dado los dias de antelacion >= 20 y edad < 18, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa aplicando el descuento acomulado
-   16. Dado los dias de antelacion >= 20 y edad >= 65, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa aplicando el descuento acomulado
+   11. Dado que edad <= 65, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa
+   12. Dado que edad > 65, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa aplicando el descuento
+   13. Dado los dias de antelacion <= 20, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa
+   14. Dado los dias de antelacion > 20, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa aplicando el descuento
+   15. Dado los dias de antelacion > 20 y edad < 18, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa aplicando el descuento acomulado
+   16. Dado los dias de antelacion > 20 y edad > 65, cuando quiero calcular la tarifa, el resultado esperado es el calculo de la tarifa aplicando el descuento acomulado
 
 4. A partir de las clases de equivalencia identificadas en el punto 2, identifique las condiciones límite o
    Por cada numero de referencia entre los parametros, las condiciones límites son restarle 1, sumarle 1 y el valor en sí mismo
