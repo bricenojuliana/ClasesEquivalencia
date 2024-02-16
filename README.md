@@ -325,6 +325,9 @@ Para realizar de forma correcta el diseño de sus pruebas responda las preguntas
 
 ### IMPLEMENTACIÓN DE LAS PRUEBAS
 Descargue el archivo [`aerodescuentos.jar`](https://campusvirtual.escuelaing.edu.co/moodle/pluginfile.php/142929/mod_assign/intro/aerodescuentos-1.0.0.jar) y adicione esta nueva dependencia en el archivo `pom.xml` de su proyecto.
+![img_4.png](img_4.png)
+![img_5.png](img_5.png)
+![img_6.png](img_6.png)
 
 Para adicionar una librería personalizada al repositorio local de maven puede ejecutar el siguiente comando.
 ```sh

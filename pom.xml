@@ -18,7 +18,9 @@
     <dependency>
       <groupId>edu.eci.cvds</groupId>
       <artifactId>aerodescuentos</artifactId>
-      <version>1.0.0</version>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${basedir}/aerodescuentos-1.0.0.jar</systemPath>
     </dependency>
   </dependencies>
   <properties>

@@ -1,5 +1,12 @@
 package edu.eci.cvds.tdd;
 
-public class TarifasTest {
+import org.junit.Test;
+import edu.eci.cvds.tdd.aerodescuentos.CalculadorDescuentos;
 
+public class TarifasTest {
+    private CalculadorDescuentos calculadorDescuentos = new CalculadorDescuentos();
+    @Test
+    public void prueba(){
+        
+    }
 }
