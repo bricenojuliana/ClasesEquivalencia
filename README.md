@@ -338,6 +338,8 @@ Cree el archivo `TarifasTest.java` en el directorio `src/test/java/edu/eci/cvds/
 Realice la implementación de las pruebas propuestas en la etapa de diseño de pruebas en esta clase. Para sus pruebas debe usar el método `calculoTarifa` de la clase `edu.eci.cvds.tdd.aerodescuentos.CalculadorDescuentos`, que se encuentran dentro del JAR de la librería personalizada.
 
 Ejecute el comando de Maven para las fases de compilación y pruebas. Verifique el resultado exitoso de todas las pruebas y el reporte generado.
+![img_7.png](img_7.png)
+( las 4 pruebas que no pasaron se dejaron en la clase debido a que nesesitan  excepsiones para su ejecucion pero el profe dijo que las dejaramos)
 
 ## ENTREGAR
 - Crear un repositorio para este proyecto y agregar la url del mismo, como entrega del laboratorio.
