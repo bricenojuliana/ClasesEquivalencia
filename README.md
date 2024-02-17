@@ -33,10 +33,10 @@ Edite el archivo pom.xml y realice las siguientes actualizaciones:
 
 ### COMPILAR Y EJECUTAR
 Ejecute los comandos necesarios de Maven, para compilar el proyecto y verificar que el proyecto se creó correctamente y los cambios realizados al archivo pom no generan inconvenientes.
-![img.png](img.png)
+![img.png](imagenes/img.png)
 Busque el comando requerido para ejecutar las pruebas unitarias de un proyecto desde Maven y ejecútelo sobre el proyecto. Se debe ejecutar la clase AppTest con resultado exitoso.
-![img_1.png](img_1.png)
-![img_2.png](img_2.png)
+![img_1.png](imagenes/img_1.png)
+![img_2.png](imagenes/img_2.png)
 
 ## EJERCICIO “REGISTRADURÍA”
 Se va a crear un proyecto base para un cliente en la registraduría, en el cual se registrarán personas con intención de votar para las próximas
@@ -256,7 +256,7 @@ Complete la implementación de la clase `RegistryTest.java` con (al menos) un m�
 
 Complete la implementación del método `registerVoter` en la clase `Registry.java` para retornar el resultado esperado según la entrada.
 
-![img_3.png](img_3.png)
+![img_3.png](imagenes/img_3.png)
 
 ## EJERCICIO "DESCUENTO DE TARIFAS"
 
@@ -324,9 +324,9 @@ buena división del conjunto de datos de entrada de la función anterior:
 
 ### IMPLEMENTACIÓN DE LAS PRUEBAS
 Descargue el archivo [`aerodescuentos.jar`](https://campusvirtual.escuelaing.edu.co/moodle/pluginfile.php/142929/mod_assign/intro/aerodescuentos-1.0.0.jar) y adicione esta nueva dependencia en el archivo `pom.xml` de su proyecto.
-![img_4.png](img_4.png)
-![img_5.png](img_5.png)
-![img_6.png](img_6.png)
+![img_4.png](imagenes/img_4.png)
+![img_5.png](imagenes/img_5.png)
+![img_6.png](imagenes/img_6.png)
 
 Para adicionar una librería personalizada al repositorio local de maven puede ejecutar el siguiente comando.
 ```sh
@@ -338,8 +338,8 @@ Cree el archivo `TarifasTest.java` en el directorio `src/test/java/edu/eci/cvds/
 Realice la implementación de las pruebas propuestas en la etapa de diseño de pruebas en esta clase. Para sus pruebas debe usar el método `calculoTarifa` de la clase `edu.eci.cvds.tdd.aerodescuentos.CalculadorDescuentos`, que se encuentran dentro del JAR de la librería personalizada.
 
 Ejecute el comando de Maven para las fases de compilación y pruebas. Verifique el resultado exitoso de todas las pruebas y el reporte generado.
-![img_7.png](img_7.png)
-( las 4 pruebas que no pasaron se dejaron en la clase debido a que nesesitan  excepsiones para su ejecucion pero el profe dijo que las dejaramos)
+![img_7.png](imagenes/img_7.png)
+Las 4 pruebas que fallan es porque en práctica el método no lanza excepciones en ninugn caso, sin embargo en el diseño se pensaron las clases de equivalencia para las excepciones. Lo ideal sería que para una próxima versión del código, las pruebas pasaran siendo que el método lanzaría las excepciones pertinentes.
 
 ## ENTREGAR
 - Crear un repositorio para este proyecto y agregar la url del mismo, como entrega del laboratorio.
